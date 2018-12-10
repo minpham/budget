@@ -20,7 +20,7 @@ input {
 	text-align: center;
 }
 .budget {
-	background-image: url("./images/bg_budget.jpg");
+	background-image: url("../images/bg_budget.jpg");
 	background-size: cover;
 	background-position: 0 70%;
 	padding: 40px 0;
@@ -44,7 +44,7 @@ input {
 	width: 350px;
 	padding: 10px;
 	color: #fff;
-	font-size: 17px;
+	font-size: 18px;
 	margin: 0 auto;
 	margin-top: 20px;
 	display: block;
@@ -68,7 +68,7 @@ input {
 	display: inline-block;
 	vertical-align: top;
 	float: right;
-	padding-right: 40px;
+	padding-right: 50px;
 }
 .clearfix {
 	clear: both;
@@ -113,14 +113,12 @@ input {
 .custom-btn {
 	color: red;
 	height: 35px;
-	padding: 0 5px;
 	font-size: 25px;
 	background-color: transparent;
-	border: transparent;
+	border: none;
 	text-align: center;
 	display: inline-block;
 	vertical-align: top;
-	outline: none;
 }
 .show-budget {
 	font-size: 0;
@@ -149,6 +147,7 @@ input {
 .show-expenese .show-title h1 {
 	color: #c13737;
 }
+
 .show-content {
 	font-size: 14px;
 	color: #000;
@@ -170,6 +169,7 @@ input {
 	font-size: 18px;
 	font-weight: 500;
 	color: #6464ab;
+	padding-right: 10px;
 	-webkit-transition: all .5s;
 	-o-transition: all .5s;
 	transition: all .5s;
@@ -177,33 +177,10 @@ input {
 .show-expenese .show-content .show-money {
 	color: red;
 }
-/* .show-content:hover .show-money:after {
+.show-content:hover .show-money:after {
 	content: "\f166";
 	font-family: "Ionicons";
 	cursor: pointer;
 	font-size: 18px;
 	padding-left: 10px;
-} */
-.hydrated {
-	position: relative;
-	line-height: 23px;
-	top: 3px;
-	right: -15px;
-	font-size: 0;
-	cursor: pointer;
-	opacity: 0;
-	visibility: hidden;
-	pointer-events: none;
-}
-.show-content:hover {
-	background-color: #ddd;
-}
-.show-content:hover .show-money {
-	padding-right: 15px;
-}
-.show-content:hover .hydrated {
-	font-size: 18px;
-	opacity: 1;
-	visibility: visible;
-	pointer-events: all;
 }
