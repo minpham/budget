@@ -23,7 +23,7 @@ class App extends Component {
         var { works } = this.state;
         console.log(data);
         data.id = this.createID();
-        if(data.money !== 0 && data.des !== "") {
+        if(data.money > 0 && data.des !== "") {
             works.push(data);
             this.setState({
                 works: works

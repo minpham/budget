@@ -17,7 +17,12 @@ class AddBudget extends Component {
             value = value === "1" ? 1 : 0;
         }
         if(name === "money") {
-            value = Number(value);
+            if(isNaN(value) || value==="")
+            {
+                value = 0;
+            } else {
+                value = Number(value);
+            }
         }
         this.setState({
             [name]: value
